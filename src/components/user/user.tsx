@@ -1,7 +1,7 @@
-import { Service, type UserType } from "../services/service";
+import { getUser, type UserType } from "../../services/service";
 
 export default async function User() {
-    const profile: UserType = await Service.getUser();
+    const profile: UserType = await getUser();
 
     return (
         <>

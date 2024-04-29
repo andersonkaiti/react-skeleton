@@ -1,7 +1,7 @@
-import { Service, type ArticleType } from "../services/service";
+import { getArticles, type ArticleType } from "../../services/service";
 
 export default async function Articles() {
-    const data: ArticleType[] = await Service.getArticles();
+    const data: ArticleType[] = await getArticles();
     
     return (
         <>
